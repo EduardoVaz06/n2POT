@@ -27,7 +27,6 @@ int buscaBinaria(int *vet, int key, int inicio, int fim, int cont)
 
 int main() 
 {
-    //int vet[10] = {13, 14, 19, 43, 47, 52, 65, 82, 89, 91};
     int valor, op, quantidade, i;
     int cont = 0;
     
@@ -68,6 +67,13 @@ int main()
 
     //buscar valores com loop para seguir buscando ou encerrar o programa
      do {
+        system("cls");
+
+    for(i = 0; i < quantidade; i++)
+        {
+            printf(" %d ", vet[i]);
+        }
+
         printf("\nDigite um valor a ser buscado: ");
         scanf("%d", &valor);
         printf("\nIndice do valor buscado: %d\n", buscaBinaria(vet, valor, 0, 9, cont));
